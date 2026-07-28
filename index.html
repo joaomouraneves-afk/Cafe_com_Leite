@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe com leite</title>
+
     <style>
         header{
             background-color: rgb(255, 0, 0);
@@ -26,11 +28,15 @@
         }
         img{
             width: 120px;
-            font-weight: 120px;
+            height: 120px;
+        }
+        .artigo-autor{
+            font-weight: bold;
         }
 
     </style>
 </head>
+
 <body>
     <header>
     <h1>Cafe com Leite</h1>
@@ -43,8 +49,14 @@
         <h2>A mistura de energia e cremosidade</h2>
         <p class="artigo-autor">por João</p>
         <p>bem-vindos ao meu blog</p>
+        <button>☕ <span>0</span></button>
         </div>
     </main>
 
 </body>
+
+<script>    
+    const botao = document.querySelector("button");
+    botao.addEventlistener("click",botaoClicado);
+</script>
 </html>
